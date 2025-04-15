@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: white;
+  background-color: black;
+  font-size: 36px;
+}
+.red {
+  background-color: red;
+}

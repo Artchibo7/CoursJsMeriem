@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+
+  <!-- ******************* EXERCICES DOM ******************* -->
+
+  <!-- **💪 TP DOM JS — Interactions Progressives. -->
+  <!-- **Ce TP propose des exercices progressifs pour apprendre à manipuler le DOM en JavaScript. -->
+  <!-- **Chaque exercice introduit un nouveau concept ou une nouvelle interaction. -->
+
+  <body>
+    <!-- **🟡 Exercice 1 : Manipulation simple du DOM. -->
+    <!-- **Objectif: Modifier des éléments HTML via JavaScript. -->
+
+    <section id="section1">
+      <h2>Titre de Section 1</h2>
+      <p id="para2">Je suis un paragraphe</p>
+      <a href="#">Un lien</a>
+    </section>
+
+    <section id="section2">
+      <h2>Titre de Section 2</h2>
+      <p class="colorful">Texte coloré</p>
+    </section>
+
+    <!-- **🿱 Exercice 2 : Changer la couleur de fond dynamiquement. -->
+    <!-- **Objectif: Créer une fonction qui change dynamiquement la couleur de fond de la page. -->
+
+    <button id="btnColors">🎨 Changer le fond</button>
+    <span id="color">Couleur : </span>
+
+    <!-- **⚫ Exercice 3 : Activer un Dark Mode. -->
+    <!-- **Objectif: Permettre de passer en mode sombre avec un clic. -->
+
+    <button id="toggleDark">🌙 Dark Mode</button>
+
+    <!-- **🔹 Exercice 4 : Afficher une modale. -->
+    <!-- **Objectif: Afficher une popup personnalisée. (soit avec une div oubien avec la balise dialog). -->
+
+    <button id="openModal">Ouvrir la modale</button>
+    <div id="modal" class="hidden">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <p>Ceci est une modale</p>
+      </div>
+    </div>
+
+    <!-- **🔴 Exercice 5 : Cercle qui suit la souris (mousemove). -->
+    <!-- **Objectif: Créer un cercle qui suit les mouvements de la souris. -->
+
+    <div id="follower">
+      <!-- <img class="img" src="./Img/Logo1.jpg" alt=""> -->
+    </div>
+
+    <!-- **🎯 Exercice 6 : Le juste prix. -->
+    <!-- **Objectif :** Créer un petit jeu interactif où l'utilisateur doit deviner un nombre mystère. -->
+
+    <h1>🎯 Devine le prix !</h1>
+    <p>Un nombre entre 1 et 100 a été choisi au hasard. À toi de jouer !</p>
+    <form id="guess_form">
+      <input
+        name="guess"
+        type="number"
+        min="1"
+        max="100"
+        required
+        placeholder="Entre un nombre"
+      />
+      <button type="submit">Valider</button>
+    </form>
+    <p id="message"></p>
+    <p>Meilleur score : <span id="best-score">--</span> essais</p>
+  </body>
+
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,61 @@
+                    //******************* EXERCICES DOM *******************//
+
+//**💪 TP DOM JS — Interactions Progressives.
+//**Ce TP propose des exercices progressifs pour apprendre à manipuler le DOM en JavaScript.
+//**Chaque exercice introduit un nouveau concept ou une nouvelle interaction.
+
+
+
+
+
+/** ⚫ Exercice 3 : Activer un Dark Mode. **/
+/** Objectif: Permettre de passer en mode sombre avec un clic. **/
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/**🔹 Exercice 4 : Afficher une modale. **/
+/**Objectif: Afficher une popup personnalisée. (soit avec une div oubien avec la balise dialog). **/
+
+/* .hidden {
+    display: none;
+    visibility: hidden;
+  } */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+/** 🔴 Exercice 5 : Cercle qui suit la souris (mousemove). **/
+/** Objectif: Créer un cercle qui suit les mouvements de la souris. **/
+
+#follower {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: crimson;
+  position: fixed;
+  pointer-events: none;
+  transition: transform 0.05s linear;
+  /* transform: translate(-50%, -50%); */ /* on peut faire ça avec JS ou css */
+}
+
+/* .img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+} */
